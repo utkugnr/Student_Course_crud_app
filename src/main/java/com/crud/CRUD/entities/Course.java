@@ -1,7 +1,6 @@
-package com.crud.CRUD.entities.concretes;
+package com.crud.CRUD.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.util.HashSet;

@@ -1,10 +1,9 @@
-package com.crud.CRUD.api.controllers;
+package com.crud.CRUD.controllers;
 
-import com.crud.CRUD.entities.concretes.Student;
+import com.crud.CRUD.entities.Student;
 import com.crud.CRUD.requests.StudentCourseEnrollmentRequest;
 import com.crud.CRUD.requests.StudentCreateRequest;
 import com.crud.CRUD.business.abstracts.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

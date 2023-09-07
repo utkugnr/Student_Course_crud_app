@@ -1,8 +1,8 @@
 package com.crud.CRUD.business.abstracts;
 
-import com.crud.CRUD.entities.concretes.Student;
+import com.crud.CRUD.entities.Student;
 import com.crud.CRUD.requests.CourseCreateRequest;
-import com.crud.CRUD.entities.concretes.Course;
+import com.crud.CRUD.entities.Course;
 
 import java.util.List;
 

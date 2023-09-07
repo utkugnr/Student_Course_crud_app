@@ -1,6 +1,6 @@
 package com.crud.CRUD.business.abstracts;
 
-import com.crud.CRUD.entities.concretes.Student;
+import com.crud.CRUD.entities.Student;
 import com.crud.CRUD.requests.StudentCourseEnrollmentRequest;
 import com.crud.CRUD.requests.StudentCreateRequest;
 

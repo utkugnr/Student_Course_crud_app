@@ -1,6 +1,6 @@
-package com.crud.CRUD.dataAccess.abstracts;
+package com.crud.CRUD.dataAccess;
 
-import com.crud.CRUD.entities.concretes.Student;
+import com.crud.CRUD.entities.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentDao extends JpaRepository<Student,Integer> {

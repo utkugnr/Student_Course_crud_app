@@ -1,4 +1,4 @@
-package com.crud.CRUD.entities.concretes;
+package com.crud.CRUD.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
