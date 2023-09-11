@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/api/students")
+@RequestMapping("/students")
 public class StudentsController {
     private StudentService studentService;
 
@@ -19,11 +19,11 @@ public class StudentsController {
         this.studentService = studentService;
     }
 
-    @GetMapping("/getall")
+    @GetMapping
     public List<Student> getAll(){
        return this.studentService.getAll();
     }
-    @PostMapping("/add")
+    @PostMapping
     public Student create(@RequestBody StudentCreateRequest newStudentRequest){
         return this.studentService.create(newStudentRequest);
     }
@@ -39,7 +39,7 @@ public class StudentsController {
     public void delete(@PathVariable int studentId){
         studentService.delete(studentId);
     }
-    @GetMapping("/getby/{studentName}")
+    @GetMapping("/byname/{studentName}")
     public Student getByStudentName(@PathVariable String studentName) {
         return this.studentService.getByStudentName(studentName);
     }
@@ -47,7 +47,7 @@ public class StudentsController {
     public void deleteMultStudent(@RequestParam List<Integer> studentIds){
         this.studentService.deleteMultStudent(studentIds);
     }
-    @PostMapping("/{studentId}/enroll/{courseId}")
+    @PostMapping("/enroll")
     public void enrollStudentInCourse(@RequestBody StudentCourseEnrollmentRequest enrollmentRequest){
         this.studentService.enrollStudentInCourse(enrollmentRequest);
     }
